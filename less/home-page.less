@@ -23,4 +23,40 @@
     }
   
   }
+
+  .middle-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem @spacing-lg 0;
+
+    .block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-bottom: @spacing-lg;
+
+      @media @tablet { 
+        width: 30%;
+      }
+
+      .feather {
+        stroke: @little-boy-blue;
+        width: 5rem;
+        height: 5rem;
+        margin-bottom: @spacing-lg;
+      }
+
+      h2 {
+        color: @smokey-black;
+      }
+
+      p {
+        color: @little-boy-blue;
+      }
+    }
+  }
 }// home
