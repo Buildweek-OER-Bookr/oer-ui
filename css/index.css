@@ -264,7 +264,7 @@ footer p {
   justify-content: center;
   background-color: #6B7FD7;
   height: 100vh;
-  padding: 10rem 2.4rem 0;
+  padding: 10rem 2.4rem;
 }
 @media (min-width: 768px) {
   .home .intro {
@@ -276,7 +276,7 @@ footer p {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 10rem 2.4rem 0;
+  padding: 10rem 2.4rem;
 }
 .home .middle-content .block {
   display: flex;
@@ -302,4 +302,18 @@ footer p {
 }
 .home .middle-content .block p {
   color: #6B7FD7;
+}
+.home .more-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003F91;
+  padding: 10rem 2.4rem;
+}
+.home .more-info .text-content h2 {
+  color: #F4FAFF;
+}
+.home .more-info .text-content p {
+  color: #F4FAFF;
 }
