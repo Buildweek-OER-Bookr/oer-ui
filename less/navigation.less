@@ -5,11 +5,11 @@
   display: flex;
   flex-direction: row;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
   background-color: @little-boy-blue;
 	width: 100%;
 	height: 6rem;
-  padding: 0 @spacing-sm;
+  padding: 0 @spacing-lg;
 
 	@media @tablet { 
     flex-direction: row;
@@ -23,11 +23,12 @@
   }
 
 	nav {
-    display: flex;
+    display: none;
     justify-content: flex-end;
     width: 100%;
 
     @media @tablet { 
+      display: flex;
       justify-content: flex-end;
       width: 60%;
     }
