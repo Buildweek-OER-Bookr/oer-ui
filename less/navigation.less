@@ -1,0 +1,53 @@
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+  background-color: @little-boy-blue;
+	width: 100%;
+	height: 6rem;
+  padding: 0 @spacing-lg;
+
+	@media @tablet { 
+    flex-direction: row;
+		justify-content: space-between;
+  }
+  
+  .logo {
+    font-family: @heading-font;
+    font-size: 3.6rem;
+    margin: 0;
+  }
+
+	nav {
+    display: none;
+    justify-content: flex-end;
+    width: 100%;
+
+    @media @tablet { 
+      display: flex;
+      justify-content: flex-end;
+      width: 60%;
+    }
+	}
+
+	nav > a {
+    font-size: 1.6rem;
+    color: black;
+		text-decoration: none;
+    padding: @spacing-sm;
+    transition: 0.5s ease;
+
+		&:hover {
+			color: #42a3b8;
+		}
+  }
+  nav > .btn {
+    width: fit-content;
+    color: @alice-blue;
+    border-radius: 0;
+  }
+}

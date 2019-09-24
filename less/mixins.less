@@ -1,0 +1,28 @@
+.custom-btn(@bg-color:@btn-bg-color, @width:20rem, @font-color:white) {
+  display: block;
+  width: @width;
+  background-color: @bg-color;
+  color: @font-color;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: @spacing-md;
+  margin-top: 0;
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+
+  @media @tablet {
+    width: 15rem;
+    padding: @spacing-md;
+  }
+
+  &:hover {
+    background-color: @font-color;
+    color: @bg-color
+  }
+}
+
+.animate(@duration:1s, @iteration:infinite, @name) {
+  animation: @duration @iteration @name;
+}
