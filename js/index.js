@@ -18,7 +18,8 @@ async function getUser(name) {
   const user = await response.json()
   return {
     name: user.name,
-    image: user.avatar_url
+    image: user.avatar_url,
+    url: user.html_url
   }
 }
 
@@ -28,19 +29,22 @@ Array.from(members)
   .map(async member => {
     const user = await getUser(member.dataset.member)
     const role = member.dataset.role
-    const div = document.createElement('div',)
+    const div = document.createElement('div')
+    const link = document.createElement('a')
     const h1 = document.createElement('h1')
     const p = document.createElement('p')
     const img = document.createElement('img')
     const username = document.createTextNode(`${user.name}`)
     const bio = document.createTextNode(`${role}`)
     div.classList.add('info')
+    link.href= `${user.url}`
     img.src = `${user.image}`
     img.alt = `${user.name} avatar`
     h1.appendChild(username); 
     p.appendChild(bio)
     member.appendChild(div)
-    div.appendChild(img)
-    div.appendChild(h1)
-    div.appendChild(p)
+    div.appendChild(link)
+    link.appendChild(img)
+    link.appendChild(h1)
+    link.appendChild(p)
   })
