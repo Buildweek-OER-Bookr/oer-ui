@@ -221,6 +221,8 @@ img {
   width: 100%;
 }
 .container .side-panel nav a {
+  font-size: 1.8rem;
+  font-family: 'Josefin Sans', sans-serif;
   color: #F4FAFF;
   padding: 1.6rem 0;
 }
