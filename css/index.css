@@ -421,6 +421,9 @@ footer p {
 .about .intro blockquote::after {
   content: '';
 }
+.about .intro blockquote p {
+  font-size: 2.4rem;
+}
 .about .intro blockquote cite {
   color: #003F91;
 }
