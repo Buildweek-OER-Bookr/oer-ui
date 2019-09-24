@@ -1,0 +1,82 @@
+.about {
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10rem @spacing-lg @spacing-lg * 2;
+
+    h1 {
+      color: @air-force-blue;
+    }
+
+    p {
+      color: @black-coral;
+    }
+
+    blockquote {
+      position: relative;
+      border-left: 8px solid @little-boy-blue;
+      padding:1.2rem 3rem 1.2rem 5rem;
+
+      &::before{
+        font-family:Arial;
+        content: "\201C";
+        color:@little-boy-blue;
+        font-size:4em;
+        position: absolute;
+        left: 10px;
+        top:-10px;
+      }
+
+      &::after{
+        content: '';
+      }
+
+      cite {
+        color: @air-force-blue;
+      }
+    }
+  }
+
+  .team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 @spacing-lg;
+
+    @media @tablet { 
+      height: 90vh;
+    }
+
+    .member {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      margin-bottom: @spacing-lg;
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 50%;
+          border-radius: 100%;
+          margin-bottom: @spacing-lg;
+        }
+        h1 {
+          color: @black-coral;
+        }
+    
+        p {
+          color: @black-coral;
+        }
+      }
+    }
+  
+  }
+}
