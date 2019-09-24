@@ -392,6 +392,8 @@ footer p {
   flex-direction: column;
   justify-content: center;
   padding: 10rem 2.4rem 4.8rem;
+  border-bottom: 4px solid #6B7FD7;
+  margin: 0 2.4rem 4.8rem;
 }
 .about .intro h1 {
   color: #003F91;
@@ -401,7 +403,6 @@ footer p {
 }
 .about .intro blockquote {
   position: relative;
-  border-left: 8px solid #6B7FD7;
   padding: 1.2rem 3rem 1.2rem 5rem;
 }
 .about .intro blockquote::before {
@@ -428,7 +429,9 @@ footer p {
 }
 @media (min-width: 768px) {
   .about .team {
-    height: 90vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 .about .team .member {
@@ -437,6 +440,12 @@ footer p {
   justify-content: center;
   align-content: center;
   margin-bottom: 2.4rem;
+}
+@media (min-width: 768px) {
+  .about .team .member {
+    flex-direction: row;
+    width: 48%;
+  }
 }
 .about .team .member .info {
   display: flex;

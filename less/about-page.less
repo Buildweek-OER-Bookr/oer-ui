@@ -5,6 +5,8 @@
     flex-direction: column;
     justify-content: center;
     padding: 10rem @spacing-lg @spacing-lg * 2;
+    border-bottom: 4px solid @little-boy-blue;
+    margin: 0 @spacing-lg @spacing-lg * 2;
 
     h1 {
       color: @air-force-blue;
@@ -16,7 +18,6 @@
 
     blockquote {
       position: relative;
-      border-left: 8px solid @little-boy-blue;
       padding:1.2rem 3rem 1.2rem 5rem;
 
       &::before{
@@ -47,7 +48,9 @@
     padding: 0 @spacing-lg;
 
     @media @tablet { 
-      height: 90vh;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
 
     .member {
@@ -56,6 +59,11 @@
       justify-content: center;
       align-content: center;
       margin-bottom: @spacing-lg;
+
+      @media @tablet { 
+        flex-direction: row;
+        width: 48%;
+      }
 
       .info {
         display: flex;
