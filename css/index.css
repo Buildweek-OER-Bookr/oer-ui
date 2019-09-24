@@ -248,6 +248,9 @@ img {
   font-size: 3.6rem;
   margin: 0;
 }
+.topbar .logo a {
+  color: #F4FAFF;
+}
 .topbar nav {
   display: none;
   justify-content: flex-end;
@@ -260,15 +263,16 @@ img {
     width: 60%;
   }
 }
-.topbar nav > a {
-  font-size: 1.6rem;
-  color: black;
+.topbar nav a {
+  font-size: 1.8rem;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #F4FAFF;
   text-decoration: none;
   padding: 0.8rem;
-  transition: 0.5s ease;
+  transition: 0.7s ease;
 }
-.topbar nav > a:hover {
-  color: #42a3b8;
+.topbar nav a:hover {
+  color: #003F91;
 }
 .topbar nav > .btn {
   width: fit-content;
