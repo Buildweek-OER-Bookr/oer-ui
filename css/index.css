@@ -290,6 +290,7 @@ footer {
   padding: 2.4rem 0;
 }
 footer p {
+  font-family: 'Josefin Sans', sans-serif;
   margin: 0;
 }
 .btn {
@@ -321,6 +322,10 @@ footer p {
   flex-direction: column;
   justify-content: center;
   background-color: #6B7FD7;
+  background-image: url(https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   padding: 10rem 2.4rem;
 }
@@ -328,6 +333,10 @@ footer p {
   .home .intro {
     height: 90vh;
   }
+}
+.home .intro .intro-content {
+  background-color: rgba(107, 127, 215, 0.8);
+  padding: 2.4rem;
 }
 .home .intro p {
   color: #F4FAFF;
@@ -371,16 +380,18 @@ footer p {
 }
 .home .more-info {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
   background-color: #003F91;
-  padding: 10rem 2.4rem;
 }
 @media (min-width: 768px) {
   .home .more-info {
     flex-direction: row;
   }
+}
+.home .more-info .text-content {
+  padding: 2.4rem;
 }
 .home .more-info .text-content h2 {
   color: #F4FAFF;
@@ -397,21 +408,40 @@ footer p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-image: url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
   padding: 10rem 2.4rem 4.8rem;
+  margin: 0 0 4.8rem;
+}
+.about .intro .intro-content {
+  background-color: rgba(0, 63, 145, 0.8);
+  padding: 2.4rem;
+}
+.about .intro p {
+  color: #F4FAFF;
+}
+.about .quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2.4rem 4.8rem;
   border-bottom: 4px solid #6B7FD7;
   margin: 0 2.4rem 4.8rem;
 }
-.about .intro h1 {
+.about .quote h1 {
   color: #003F91;
 }
-.about .intro p {
+.about .quote p {
   color: #555B6E;
 }
-.about .intro blockquote {
+.about .quote blockquote {
   position: relative;
   padding: 1.2rem 3rem 1.2rem 5rem;
 }
-.about .intro blockquote::before {
+.about .quote blockquote::before {
   font-family: Arial;
   content: "\201C";
   color: #6B7FD7;
@@ -420,13 +450,13 @@ footer p {
   left: 10px;
   top: -10px;
 }
-.about .intro blockquote::after {
+.about .quote blockquote::after {
   content: '';
 }
-.about .intro blockquote p {
+.about .quote blockquote p {
   font-size: 2.4rem;
 }
-.about .intro blockquote cite {
+.about .quote blockquote cite {
   color: #003F91;
 }
 .about .team {

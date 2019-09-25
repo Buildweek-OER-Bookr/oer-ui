@@ -4,7 +4,29 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
     padding: 10rem @spacing-lg @spacing-lg * 2;
+    margin: 0 0 @spacing-lg * 2;
+
+    .intro-content {
+      background-color: rgba(0, 63, 145, .8);
+      padding: @spacing-lg;
+    }
+
+    p {
+      color: @alice-blue;
+    }
+  }
+
+  .quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 @spacing-lg @spacing-lg * 2;
     border-bottom: 4px solid @little-boy-blue;
     margin: 0 @spacing-lg @spacing-lg * 2;
 
