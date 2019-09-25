@@ -345,6 +345,7 @@ footer p {
 }
 .home .intro p {
   color: #F4FAFF;
+  font-size: 2rem;
 }
 .home .middle-content {
   display: flex;
