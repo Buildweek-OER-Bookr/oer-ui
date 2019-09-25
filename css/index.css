@@ -155,7 +155,7 @@ h5 {
   margin: 0 0 2.4rem 0;
 }
 h1 {
-  font-size: 3.2rem;
+  font-size: 4.2rem;
 }
 h2 {
   font-size: 2.8rem;
@@ -338,6 +338,11 @@ footer p {
   background-color: rgba(107, 127, 215, 0.8);
   padding: 2.4rem;
 }
+@media (min-width: 768px) {
+  .home .intro .intro-content {
+    max-width: 700px;
+  }
+}
 .home .intro p {
   color: #F4FAFF;
 }
@@ -419,6 +424,11 @@ footer p {
 .about .intro .intro-content {
   background-color: rgba(0, 63, 145, 0.8);
   padding: 2.4rem;
+}
+@media (min-width: 768px) {
+  .about .intro .intro-content {
+    max-width: 700px;
+  }
 }
 .about .intro p {
   color: #F4FAFF;
