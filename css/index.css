@@ -297,8 +297,9 @@ footer p {
   display: block;
   width: 20rem;
   background-color: #003F91;
-  color: white;
-  font-size: 1.6rem;
+  color: #F4FAFF;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
   text-align: center;
   padding: 1.6rem;
   margin-top: 0;
@@ -314,8 +315,12 @@ footer p {
   }
 }
 .btn:hover {
-  background-color: white;
+  background-color: #F4FAFF;
   color: #003F91;
+}
+.btn a,
+.btn a:hover {
+  color: inherit;
 }
 .home .intro {
   display: flex;
@@ -342,11 +347,6 @@ footer p {
   .home .intro .intro-content {
     max-width: 700px;
   }
-}
-.home .intro .intro-content .btn a {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 2rem;
-  color: #F4FAFF;
 }
 .home .intro p {
   color: #F4FAFF;
