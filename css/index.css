@@ -343,6 +343,11 @@ footer p {
     max-width: 700px;
   }
 }
+.home .intro .intro-content .btn a {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+  color: #F4FAFF;
+}
 .home .intro p {
   color: #F4FAFF;
   font-size: 2rem;
