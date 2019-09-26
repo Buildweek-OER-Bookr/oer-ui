@@ -78,7 +78,6 @@ img {
     flex-direction: column;
     width: @side-panel-width;
     height: 100%;
-    padding: 0 @spacing-lg;
     background-color: @black-coral;
     transform: translateX(-@side-panel-width);
 
@@ -86,9 +85,14 @@ img {
       display: flex;
       align-items: center;
       height: 6rem;
+      padding: 0 @spacing-lg;
+      margin-bottom: @spacing-lg * 2;
 
       .feather-x {
         stroke: @alice-blue;
+      }
+      + nav {
+        border-top: 1px solid #43454a;
       }
     }
 
@@ -98,11 +102,12 @@ img {
       justify-content: flex-end;
       width: 100%;
 
-      a {
+      > a {
         font-size: 1.8rem;
         font-family: @heading-font;
         color: @alice-blue;
-        padding: @spacing-md 0;
+        padding: @spacing-lg;
+        border-bottom: 1px solid #43454a;
       }
     }
   }
