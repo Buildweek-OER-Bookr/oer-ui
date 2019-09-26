@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 3.2rem;
+  font-size: 4.2rem;
 }
 
 h2 {
@@ -44,5 +44,72 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  transition: .5s cubic-bezier(.91,.06,.47,1.05) transform;
+
+  .toggle-button {
+    @media @tablet { 
+      display: none;
+    }
+  }
+
+  &.show-panel {
+    transform: translateX(@side-panel-width);
+
+    .feather-x {
+      display: block;
+    }
+    .feather-menu {
+      display:none;
+    }
+  }
+
+  .feather-x {
+    display: none;
+  }
+
+  .side-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: @side-panel-width;
+    height: 100%;
+    background-color: @black-coral;
+    transform: translateX(-@side-panel-width);
+
+    header {
+      display: flex;
+      align-items: center;
+      height: 6rem;
+      padding: 0 @spacing-lg;
+      margin-bottom: @spacing-lg * 2;
+
+      .feather-x {
+        stroke: @alice-blue;
+      }
+      + nav {
+        border-top: 1px solid #43454a;
+      }
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 100%;
+
+      > a {
+        font-size: 1.8rem;
+        font-family: @heading-font;
+        color: @alice-blue;
+        padding: @spacing-lg;
+        border-bottom: 1px solid #43454a;
+      }
+    }
+  }
 }
 
