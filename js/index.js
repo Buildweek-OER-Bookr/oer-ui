@@ -1,10 +1,17 @@
-let container = document.querySelector('.container')
-let toggleButton = document.querySelector('.toggle-button')
-let closeButton = document.querySelector('.close-button')
+const scrollToTop = () => window.scrollTo({
+  top: 0,
+  left: 0,
+  behavior: 'smooth'
+})
+
+const container = document.querySelector('.container')
+const toggleButton = document.querySelector('.toggle-button')
+const closeButton = document.querySelector('.close-button')
 
 toggleButton.addEventListener('click', (e) => {
   e.preventDefault()
   container.classList.toggle('show-panel');
+  setTimeout(scrollToTop, 500);
 })
 
 closeButton.addEventListener('click', (e) => {
